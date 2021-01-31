@@ -1,0 +1,4 @@
+server :
+  root-name: "/"
+  http-handler: "echo"
+  port: 8080
