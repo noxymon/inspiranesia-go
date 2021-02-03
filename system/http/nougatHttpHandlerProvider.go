@@ -9,6 +9,7 @@ import (
 
 type NougatHttpHandler interface {
 	Start()
+	GetHttpHandler() interface{}
 }
 
 func ProvideHttpHandler(config *config.DefaultConfig, logger logging.NougatLoggingProvider) NougatHttpHandler {

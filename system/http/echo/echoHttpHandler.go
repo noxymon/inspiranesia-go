@@ -32,3 +32,6 @@ func (e EchoHttpHandler) Start() {
 func (e EchoHttpHandler) defaultRootEndpoint(c echo.Context) error {
 	return c.String(http.StatusOK, "This is default end point using echo :)")
 }
+func (e EchoHttpHandler) GetHttpHandler() interface{} {
+	return e.httpHandler
+}

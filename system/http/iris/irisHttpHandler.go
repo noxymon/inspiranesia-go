@@ -31,3 +31,7 @@ func (i IrisHttpHandler) Start() {
 func (i IrisHttpHandler) defaultRootEndpoint(ctx iris.Context) {
 	ctx.WriteString("This is default end point using iris :)")
 }
+
+func (i IrisHttpHandler) GetHttpHandler() interface{} {
+	return i.httpHandler
+}
